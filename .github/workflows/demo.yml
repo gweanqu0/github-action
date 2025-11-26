@@ -18,14 +18,14 @@ jobs:
         run: touch github-action.txt
       - name: print hello world
         run: echo Hello world
-      -  name: display readme file
+      - name: display readme file
         run: cat README.md
-build_job:
+  build_job:
     runs-on: windows-latest
     steps:
       - name: display hello
         run: echo hello 
-deploy_job:
+  deploy_job:
     runs-on: macos-latest
     steps:
       - run: echo hellow mac
